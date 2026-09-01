@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animated_button/flutter_animated_button.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -8,12 +9,53 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       appBar: AppBar(title: const Text('What do you want me to Cook?')),
-      body: Align(
-        alignment: Alignment.topCenter,
-        child: Image.asset(
-          'assets/images/man-cooking-with-pan_24908-81150.png',
-          width: 300,
-          height: 300,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Align(
+              alignment: Alignment.topCenter,
+              child: Image.asset(
+                'assets/gifs/itachi-uchiha-cooking-8oqlpp6hi6i5yd0s.gif',
+                width: 300,
+                height: 300,
+              ),
+            ),
+            Text(
+              'Hey, it’s Vincent! 👋',
+
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              overflow: TextOverflow.ellipsis,
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              'What are you feeling like eating today? 🍳',
+              maxLines: 2,
+              style: TextStyle(fontSize: 16),
+              overflow: TextOverflow.ellipsis,
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              'Tap the button below and pick a dish for me to cook for you! ❤️',
+              maxLines: 2,
+              style: TextStyle(fontSize: 16),
+              overflow: TextOverflow.ellipsis,
+              textAlign: TextAlign.center,
+            ),
+            SizedBox(height: 20),
+            AnimatedButton(
+              onPress: () {
+                // Handle button press
+              },
+              height: 60,
+              width: 200,
+              text: 'Menu',
+              textStyle: const TextStyle(fontSize: 20, color: Colors.black),
+              isReverse: true,
+              selectedTextColor: Colors.black,
+              transitionType: TransitionType.CENTER_LR_OUT,
+            ),
+            SizedBox(height: 20),
+          ],
         ),
       ),
     );
