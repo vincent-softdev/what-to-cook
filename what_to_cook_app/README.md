@@ -1,17 +1,7 @@
 # what_to_cook_app
 
-A new Flutter project.
+I am the chef at home, and I sometimes find it difficult to decide what meal my wife wants to eat. Hence, I created this app for my wife to pick the food she wants me to cook. Based on her choice, I can then find a suitable recipe and estimate the cost of the meal.
+
+Feel free to use this repo if you'd like to use the app as well.
 
 ## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
