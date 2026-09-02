@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animated_button/flutter_animated_button.dart';
+import 'package:what_to_cook_app/screens/menu.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -45,6 +46,10 @@ class HomeScreen extends StatelessWidget {
             AnimatedButton(
               onPress: () {
                 // Handle button press
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const MenuScreen()),
+                );
               },
               height: 60,
               width: 200,

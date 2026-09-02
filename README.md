@@ -4,3 +4,4 @@ I am the chef at home, and I sometimes find it difficult to decide what meal my 
 
 Feel free to use this repo if you'd like to use the app as well.
 
+<img width="380" height="598" alt="Screenshot 2026-09-02 at 1 21 05 am" src="https://github.com/user-attachments/assets/fcdfd714-7553-4d3e-8c47-2e68cd1cc324" />
