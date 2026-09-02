@@ -11,7 +11,11 @@ class MenuScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Menu')),
       body: Center(
-        child: Text('This is the Menu Screen', style: TextStyle(fontSize: 24)),
+        child: ListView.builder(
+          itemCount: recipes.length,
+          itemBuilder: (context, index) =>
+              ListTile(title: Text(recipes[index].name)),
+        ),
       ),
     );
   }
