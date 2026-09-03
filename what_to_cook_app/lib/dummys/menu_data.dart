@@ -1,7 +1,7 @@
-import 'package:what_to_cook_app/models/menu_model.dart';
+import 'package:what_to_cook_app/models/card_model.dart';
 
-final List<MenuModel> recipes = [
-  MenuModel(
+final List<CardModel> recipes = [
+  CardModel(
     name: 'Chicken Teriyaki',
     imageUrl: 'assets/images/chicken_teriyaki.jpg',
     description: 'Juicy chicken cooked in a sweet and savoury teriyaki sauce.',
@@ -18,7 +18,7 @@ final List<MenuModel> recipes = [
     ],
   ),
 
-  MenuModel(
+  CardModel(
     name: 'Spaghetti Bolognese',
     imageUrl: 'assets/images/spaghetti_bolognese.jpg',
     description: 'Classic spaghetti with a rich beef and tomato sauce.',
@@ -35,7 +35,7 @@ final List<MenuModel> recipes = [
     ],
   ),
 
-  MenuModel(
+  CardModel(
     name: 'Beef Fried Rice',
     imageUrl: 'assets/images/beef_fried_rice.jpg',
     description: 'Fried rice tossed with beef, vegetables and a savoury sauce.',
@@ -52,7 +52,7 @@ final List<MenuModel> recipes = [
     ],
   ),
 
-  MenuModel(
+  CardModel(
     name: 'Creamy Garlic Chicken',
     imageUrl: 'assets/images/creamy_garlic_chicken.jpg',
     description: 'Tender chicken in a creamy garlic and parmesan sauce.',
@@ -69,7 +69,7 @@ final List<MenuModel> recipes = [
     ],
   ),
 
-  MenuModel(
+  CardModel(
     name: 'Beef Steak',
     imageUrl: 'assets/images/beef_steak.jpg',
     description: 'Pan-seared beef steak served with vegetables and potatoes.',
@@ -85,7 +85,7 @@ final List<MenuModel> recipes = [
     ],
   ),
 
-  MenuModel(
+  CardModel(
     name: 'Japanese Curry',
     imageUrl: 'assets/images/japanese_curry.jpg',
     description:
@@ -102,7 +102,7 @@ final List<MenuModel> recipes = [
     ],
   ),
 
-  MenuModel(
+  CardModel(
     name: 'Pad Thai',
     imageUrl: 'assets/images/pad_thai.jpg',
     description: 'Thai-style stir-fried noodles with prawns, egg and peanuts.',
@@ -119,7 +119,7 @@ final List<MenuModel> recipes = [
     ],
   ),
 
-  MenuModel(
+  CardModel(
     name: 'Korean Beef Bulgogi',
     imageUrl: 'assets/images/beef_bulgogi.jpg',
     description:
@@ -138,7 +138,7 @@ final List<MenuModel> recipes = [
     ],
   ),
 
-  MenuModel(
+  CardModel(
     name: 'Salmon Teriyaki',
     imageUrl: 'assets/images/salmon_teriyaki.jpg',
     description: 'Pan-seared salmon glazed with homemade teriyaki sauce.',
@@ -156,7 +156,7 @@ final List<MenuModel> recipes = [
     ],
   ),
 
-  MenuModel(
+  CardModel(
     name: 'Tomato Beef Noodles',
     imageUrl: 'assets/images/tomato_beef_noodles.jpg',
     description: 'Warm noodles served with tender beef in a rich tomato broth.',

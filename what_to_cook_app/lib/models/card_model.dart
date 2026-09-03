@@ -1,4 +1,4 @@
-class MenuModel {
+class CardModel {
   final String name;
   final String imageUrl;
   final String description;
@@ -6,7 +6,7 @@ class MenuModel {
   final double estimatedPrice;
   final List<String> ingredients;
 
-  MenuModel({
+  CardModel({
     required this.name,
     required this.imageUrl,
     required this.description,
