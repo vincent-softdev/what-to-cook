@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:what_to_cook_app/components/item_card.dart';
 import 'package:what_to_cook_app/dummys/menu_data.dart' as menu_data;
 
 class MenuScreen extends StatelessWidget {
@@ -10,12 +11,16 @@ class MenuScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(title: const Text('Menu')),
-      body: Center(
-        child: ListView.builder(
-          itemCount: recipes.length,
-          itemBuilder: (context, index) =>
-              ListTile(title: Text(recipes[index].name)),
+      body: GridView.builder(
+        padding: const EdgeInsets.all(16),
+        gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+          maxCrossAxisExtent: 360,
+          mainAxisExtent: 330,
+          crossAxisSpacing: 16,
+          mainAxisSpacing: 16,
         ),
+        itemCount: recipes.length,
+        itemBuilder: (context, index) => ItemCard(inputData: recipes[index]),
       ),
     );
   }

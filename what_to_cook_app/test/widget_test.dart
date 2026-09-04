@@ -1,30 +1,28 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
-import 'package:flutter/material.dart';
+import 'package:flutter_animated_button/flutter_animated_button.dart';
 import 'package:flutter_test/flutter_test.dart';
-
 import 'package:what_to_cook_app/main.dart';
+import 'package:what_to_cook_app/screens/menu.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
+  testWidgets('home screen opens the menu', (tester) async {
     await tester.pumpWidget(const MyApp());
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    expect(find.text('What do you want me to Cook?'), findsOneWidget);
+    expect(find.text('Menu'), findsNWidgets(2));
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+    await tester.tap(find.byType(AnimatedButton));
+    await tester.pumpAndSettle();
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    expect(find.byType(MenuScreen), findsOneWidget);
+    expect(find.text('Chicken Teriyaki'), findsOneWidget);
+  });
+
+  testWidgets('menu renders recipe cards in a grid', (tester) async {
+    await tester.pumpWidget(const MyApp());
+    await tester.tap(find.byType(AnimatedButton));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Spaghetti Bolognese'), findsOneWidget);
+    expect(find.text('30 min • \$12.00'), findsOneWidget);
   });
 }
