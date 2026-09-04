@@ -45,7 +45,8 @@ class HomeScreen extends StatelessWidget {
             SizedBox(height: 20),
             AnimatedButton(
               onPress: () {
-                // Handle button press
+                // Push adds the menu screen to the navigation stack, so the
+                // device back button can return to this home screen.
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const MenuScreen()),
