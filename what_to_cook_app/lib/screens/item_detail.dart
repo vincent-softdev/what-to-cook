@@ -8,6 +8,9 @@ class ItemDetail extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(title: Text(itemDetail.name)),
+      body: Center(child: Text(itemDetail.description)),
+    );
   }
 }
