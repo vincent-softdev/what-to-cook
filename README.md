@@ -4,4 +4,18 @@ I am the chef at home, and I sometimes find it difficult to decide what meal my 
 
 Feel free to use this repo if you'd like to use the app as well.
 
-<img width="380" height="598" alt="Screenshot 2026-09-02 at 1 21 05 am" src="https://github.com/user-attachments/assets/fcdfd714-7553-4d3e-8c47-2e68cd1cc324" />
+## Getting Started
+
+## CI/CD
+
+GitHub Actions runs on pushes to `main` and `feature/**`, and on pull requests
+targeting `main`. It checks formatting, analyzes the Dart code, runs the Flutter
+tests, and builds a release version of the web app.
+
+Successful pushes to `main` are deployed automatically to GitHub Pages.
+
+To enable the deployment in the repository, open **Settings → Pages** and set
+the source to **GitHub Actions**. The workflow uses the repository name as the
+web app base path, so the deployed URL will be:
+
+`https://<your-github-username>.github.io/<repository-name>/`
