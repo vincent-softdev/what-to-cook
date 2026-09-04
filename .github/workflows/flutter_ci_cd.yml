@@ -16,6 +16,9 @@ jobs:
   validate:
     name: Validate Flutter app
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: what_to_cook_app
 
     steps:
       - name: Check out repository
@@ -46,7 +49,7 @@ jobs:
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v3
         with:
-          path: build/web
+          path: what_to_cook_app/build/web
 
   deploy:
     name: Deploy to GitHub Pages
